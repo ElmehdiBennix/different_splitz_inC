@@ -6,7 +6,7 @@
 /*   By: ebennix <ebennix@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 03:11:48 by ebennix           #+#    #+#             */
-/*   Updated: 2023/02/20 22:59:25 by ebennix          ###   ########.fr       */
+/*   Updated: 2023/02/20 23:06:20 by ebennix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ typedef struct t_vb
 	int		i;
 	int		j;
 	int		k;
-} s_vb;
+}s_vb;
 
 static int	count_word(char const *s, char c)
 {
@@ -56,9 +56,9 @@ static int	len_word(char const *s, int i, char c)
 	return (j);
 }
 
-static	char **set_data(int size)
+static	char	**set_data(int size)
 {
-	char **tab;
+	char	**tab;
 
 	tab = NULL;
 	tab = (char **)malloc(size * sizeof(char *));
